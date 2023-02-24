@@ -1,0 +1,22 @@
+@import './base.scss';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+$stripeColor1: #4e4e4e;
+$stripeColor2: #3b3b3b;
+$stripeWidth: 80px;
+
+#app{
+    height: 100vh;
+}
+
+body{
+    // background-color: #1b1b1b;
+    background: repeating-linear-gradient(
+        45deg,
+        $stripeColor1,
+        $stripeColor1 $stripeWidth,
+        $stripeColor2 $stripeWidth,
+        $stripeColor2 $stripeWidth*2
+    );
+    color: white;
+}
