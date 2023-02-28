@@ -15,6 +15,7 @@ import { splatoonEvents, type SplatoonEvent, type EventCategory } from "../model
 import bigRunSrc from "../assets/imgs/Big_Run.png";
 import splatFestSrc from "../assets/imgs/Splatfest_Logo.png";
 import splat3Src from "../assets/imgs/splatoon-3.webp";
+import splatChSrc from "../assets/imgs/splatoon_ch_icon.png"
 import { useRoute } from 'vue-router'
 
 type EventDay = { date: CalendarDate; isActive: boolean; events: SplatoonEvent[] };
@@ -40,6 +41,8 @@ function getCategoryImg(category: EventCategory) {
             return splatFestSrc;
         case "update":
             return splat3Src;
+        case "ch-event":
+            return splatChSrc;
     }
 }
 
@@ -59,11 +62,9 @@ function loadWeeks(start: CalendarDate, month: CalendarMonth) {
                 // handle duration over sunday
                 else if(i + e.duration > 7){
                     let overflow = ((i + e.duration) - 7);
-                    console.log("overflow: " + overflow);
                     e.duration = e.duration - overflow;
                     let monday = addDays(current, e.duration);
                     let newE = {...e, duration: overflow} as SplatoonEvent;
-                    console.log(newE);
 
                     if(splatoonEvents[serializeIso8601String(monday)] == null){
                         splatoonEvents[serializeIso8601String(monday)] = [];
@@ -91,6 +92,15 @@ function monthToString(month: Month){
         case "feb": return "February";
         case "mar": return "March";
         case "apr": return "April";
+        case "may": return "May";
+        case "jun": return "June";
+        case "jul": return "July";
+        case "aug": return "August";
+        case "aug": return "August";
+        case "sep": return "September";
+        case "oct": return "October";
+        case "nov": return "November";
+        case "dec": return "December";
         default: return month;
     }
 }
@@ -155,6 +165,7 @@ $bigRunBg: violet;
 $splatfestBg: rgb(211, 167, 47);
 $tournamentBg: rgba(6, 97, 6, 0.753);
 $updateBg: rgb(48, 48, 170);
+$chEvent: rgb(156, 61, 85);
 
 $gap: 0px;
 
@@ -247,6 +258,10 @@ $gap: 0px;
 
 .update{
     background-color: $updateBg;
+}
+
+.ch-event{
+    background-color: $chEvent;
 }
 
 a:link {

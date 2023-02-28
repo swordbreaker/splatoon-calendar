@@ -1,11 +1,11 @@
 {
-    "2023-03-01": [{ "name": "Fresh Season 2023 start", "category": "update", "url": "#"}],
+    "2023-03-01": [{ "name": "Fresh Season 2023 start", "category": "update"}],
     "2023-03-04": [
         {
             "name": "Big Run",
             "category": "big-run",
-            "url": "https://discord.com/events/477102190897528832/1077295098544537610",
             "duration": 2
         }
-    ]
+    ],
+    "2023-03-31": [{ "name": "End of the giveaway", "category": "ch-event", "url": "https://twitter.com/splatoon_swiss/status/1630251055304044544"}]
 }
