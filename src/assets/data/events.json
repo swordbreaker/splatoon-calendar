@@ -7,5 +7,7 @@
             "duration": 2
         }
     ],
-    "2023-03-31": [{ "name": "End of the giveaway", "category": "ch-event", "url": "https://twitter.com/splatoon_swiss/status/1630251055304044544"}]
+    "2023-03-31": [{ "name": "End of the giveaway", "category": "ch-event", "url": "https://twitter.com/splatoon_swiss/status/1630251055304044544"}],
+    "2023-04-01": [{"name": "Splatfest: Nessie vs Aliens vs Bigfoot", "category": "splatfest", "duration": 2}],
+    "2023-04-29": [{ "name": "SwissZonesCup#1 @ Erupt", "category": "tournament", "url": "https://battlefy.com/swiss-splatoon-community/swisszonescup1-erupt/63f774dcaf646c6993cbb742/info"}]
 }

@@ -16,6 +16,7 @@ import bigRunSrc from "../assets/imgs/Big_Run.png";
 import splatFestSrc from "../assets/imgs/Splatfest_Logo.png";
 import splat3Src from "../assets/imgs/splatoon-3.webp";
 import splatChSrc from "../assets/imgs/splatoon_ch_icon.png"
+import trophySrc from "../assets/imgs/trophy.png";
 import { useRoute } from 'vue-router'
 
 type EventDay = { date: CalendarDate; isActive: boolean; events: SplatoonEvent[] };
@@ -38,7 +39,7 @@ function getCategoryImg(category: EventCategory) {
         case "splatfest":
             return splatFestSrc;
         case "tournament":
-            return splatFestSrc;
+            return trophySrc;
         case "update":
             return splat3Src;
         case "ch-event":
